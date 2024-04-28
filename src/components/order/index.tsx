@@ -9,7 +9,7 @@ import reserveIcon from "../../assets/order-icon.svg"
 
 const Order = () => {   
 
-    const phoneNumber = '+551112345678'; // Replace with actual user's phone number
+    const phoneNumber = '+55519806-6299'; // Replace with actual user's phone number
     const order = 'Olá! Gostaria de fazer um pedido'; // Replace with your default message
     const encodedMessage = encodeURIComponent(order);
     
