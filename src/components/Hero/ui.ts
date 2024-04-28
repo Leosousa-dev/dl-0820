@@ -12,6 +12,7 @@ const HeroUI = styled.div`
 
 const Headline = styled.h1`
   color: #FF626E;
+  font-size: 24px;
   font-family: "Pacifico", cursive;
 `
 const About = styled.p`
