@@ -1,6 +1,6 @@
 import {OrderBtn, Container, ReserveBtn} from "./ui";
 import orderIcon from "../../assets/order-icon.svg"
-import reserveIcon from "../../assets/order-icon.svg"
+import reserveIcon from "../../assets/reserve-icon.svg"
 
 
 
