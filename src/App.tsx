@@ -6,11 +6,13 @@ import Order from './components/order'
 import './App.css'
 
 function App() {
+  const message = 'Olá! Gostaria de saber mais sobre...';
+
   return (
     <Container>
         <Hero/>
         <ProductList/>
-        <Order/>
+        <Order message={message}/>
     </Container>
   )
 }

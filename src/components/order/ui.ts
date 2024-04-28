@@ -36,7 +36,25 @@ const Container = styled.div`
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    height: 100%;
     max-width: 300px;
 `
 
-export {OrderBtn, Container, ReserveBtn};
+
+const WhatsAppButtonContainer = styled.button`
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Efeito de hover */
+  
+  &:hover {
+    background-color: #1DA15A; /* Verde escuro do WhatsApp */
+  }
+`;
+
+export {OrderBtn, Container, ReserveBtn, WhatsAppButtonContainer};
