@@ -14,13 +14,27 @@ const Signal = styled.span`
     font-weight: 600;
 `
 
+const List = styled.ul`
+    width: 100%;
+    max-width: 265px;
+`
+
+const ItemList = styled.div`
+    display: flex;
+    gap: 14px;
+    border-bottom: 1px dashed #E4E4E7;
+    padding: 6px 12px;
+    color: #52525B;
+`
+const Option = styled.span`
+    color: #A1A1AA;
+`
 
 const ProductListUi = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     width: 100%;
-
 `
 
-export {Availability, ProductListUi, Signal};
+export {Availability, ProductListUi, Signal, List, ItemList, Option};
