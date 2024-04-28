@@ -17,6 +17,7 @@ const Signal = styled.span`
 const List = styled.ul`
     width: 100%;
     max-width: 265px;
+    margin-top: 24px;
 `
 
 const ItemList = styled.div`

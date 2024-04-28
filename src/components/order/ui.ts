@@ -21,7 +21,6 @@ const ReserveBtn = styled.div`
     justify-content: center;
     gap: 14px;
     cursor: pointer;
-    background-color: #fff;
     color: #52525B;
     border: 1px solid #938587;
     font-weight: 500;
@@ -40,21 +39,4 @@ const Container = styled.div`
     max-width: 300px;
 `
 
-
-const WhatsAppButtonContainer = styled.button`
-  background-color: #25D366; /* Verde do WhatsApp */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Efeito de hover */
-  
-  &:hover {
-    background-color: #1DA15A; /* Verde escuro do WhatsApp */
-  }
-`;
-
-export {OrderBtn, Container, ReserveBtn, WhatsAppButtonContainer};
+export {OrderBtn, Container, ReserveBtn};
