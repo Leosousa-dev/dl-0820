@@ -9,22 +9,31 @@ import reserveIcon from "../../assets/reserve-icon.svg"
 
 const Order = () => {   
 
-    const phoneNumber = '+55519806-6299'; // Replace with actual user's phone number
-    const order = 'Olá! Gostaria de fazer um pedido'; // Replace with your default message
-    const encodedMessage = encodeURIComponent(order);
-    
-    const sendMensage = () =>{
+    const phoneNumber = '+55519806-6299';
+    const defaultOrder = 'Olá! Gostaria de fazer um pedido';
+    const reserveOrder = 'Olá! Gostaria de fazer uma encomenda';
+
+    const sendMensage = (message: string) => {
+        const encodedMessage = encodeURIComponent(message);
         const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
         window.open(whatsappURL, '_blank');  
-     }
+    }
+
+    const handleOrderClick = () => {
+        sendMensage(defaultOrder);
+    }
+
+    const handleReserveClick = () => {
+        sendMensage(reserveOrder);
+    }
 
     return(
         <Container>
-            <OrderBtn onClick={sendMensage}>
+            <OrderBtn onClick={handleOrderClick}>
                 <img src={orderIcon} alt="order icon"/>
                 Pedir agora
             </OrderBtn>
-            <ReserveBtn onClick={sendMensage}>
+            <ReserveBtn onClick={handleReserveClick}>
                 <img src={reserveIcon} alt="reserve icon" />
                 Reservar
             </ReserveBtn>
