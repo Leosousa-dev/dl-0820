@@ -19,10 +19,6 @@ const ProductList = () => {
                 </ItemList>
                 <ItemList>
                     <span>✓</span>
-                    <Option>Paçoca</Option>
-                </ItemList>
-                <ItemList>
-                    <span>✓</span>
                     <Option>Maracujá</Option>
                 </ItemList>
             </List>
