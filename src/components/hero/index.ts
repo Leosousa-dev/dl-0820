@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
     gap: ${theme.spacing.large};
-    padding-top: ${theme.spacing.small};
+    padding-top: ${theme.spacing.xsmall};
     padding-bottom: ${theme.spacing.large};
 `;
 
