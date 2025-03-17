@@ -1,15 +1,39 @@
 import styled from "styled-components";
+import { theme } from "../../theme/ui";
+
+
 
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: aqua;
+    gap: ${theme.spacing.large};
+    padding-top: ${theme.spacing.large};
 `;
 
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+`;
 
-export const HeaderTitle = styled.h1`
-    font-size: 24px;
-    font-weight: 600;
+export const Image = styled.img`
+    width: 240px;
+`;
+
+export const Title = styled.h1`
+    font-size: ${theme.fontSizes.large};
+    font-family: ${theme.fonts.primary};
+    font-weight: ${theme.fontWeights.bold};
+    color: ${theme.colors.express};
+`;
+export const Subtitle = styled.h2`
+  font-size: ${theme.fontSizes.medium};
+  font-family: ${theme.fonts.secondary};
+  font-weight: ${theme.fontWeights.regular};
+  color: ${theme.colors.forgGray};
 `;

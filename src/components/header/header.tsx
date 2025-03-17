@@ -1,14 +1,17 @@
-import { Container } from "./index";
+import { Container, Wrapper, Image, Title, Subtitle,  } from "./index";
 import logo from "../../assets/logo.svg";
-import background from "../../assets/background.svg";
+import product from "../../assets/product.png";
+
 
 const Header = () => {
     return (
         <Container>
             <img src={logo} alt="logo"  width={187}/>
-            <div>
-                <img src={background} alt="background" />
-            </div>
+            <Wrapper>
+                <Image src={product} alt="product" />
+                <Title>Trufas Artesanais: Pequenas Delícias Feitas com Paixão!</Title>
+                <Subtitle>Descubra a magia das trufas artesanais, pequenas delícias feitas com amor e dedicação.</Subtitle>
+            </Wrapper>
         </Container>
     )
 }
