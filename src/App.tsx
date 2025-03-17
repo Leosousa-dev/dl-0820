@@ -1,6 +1,7 @@
-import Hero from './components/hero/hero'
 import { Analytics } from "@vercel/analytics/react"
-import List from './components/uiComponents/list/list'
+import Hero from './components/hero/hero'
+import {Button} from './components/ui/button/button'
+import { Product } from './components/product/product'
 
 import './App.css'
 
@@ -10,8 +11,8 @@ function App() {
     <>
         <Analytics/>
         <Hero/>
-        {/* <Button>😋    Pedir agora !</Button> */}
-        <List />
+        <Product/>
+        {/* <Button>😋   Pedir agora !</Button> */}
     </>
   )
 }

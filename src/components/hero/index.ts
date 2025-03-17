@@ -10,6 +10,7 @@ export const Container = styled.div`
     width: 100%;
     gap: ${theme.spacing.large};
     padding-top: ${theme.spacing.small};
+    padding-bottom: ${theme.spacing.large};
 `;
 
 export const Wrapper = styled.div`
@@ -22,7 +23,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 240px;
+    width: 200px;
 `;
 
 export const Title = styled.h1`
