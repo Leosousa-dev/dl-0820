@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Container>
-      <Analytics/>
+        <Analytics/>
         <Hero/>
         <ProductList/>
         <Order/>
