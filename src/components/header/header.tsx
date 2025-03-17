@@ -1,9 +1,15 @@
+import { Container } from "./index";
+import logo from "../../assets/logo.svg";
+import background from "../../assets/background.svg";
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <Container>
+            <img src={logo} alt="logo"  width={187}/>
+            <div>
+                <img src={background} alt="background" />
+            </div>
+        </Container>
     )
 }
 
