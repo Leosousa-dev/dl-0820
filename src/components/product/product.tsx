@@ -9,8 +9,8 @@ const sabores = ["Morango", "Maracujá", "Brigadeiro"];
 
 export const Product = () => {
     const [saboresSelecionados, setSaboresSelecionados] = useState<string[]>([]);
-    const [isChecked, setIsChecked] = useState(false);
 
+    
     const handleCheckboxChange = (sabor: string, isChecked: boolean) => {
         if (isChecked) {
           setSaboresSelecionados((prev) => [...prev, sabor]);
