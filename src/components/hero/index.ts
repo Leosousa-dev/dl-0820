@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-items: center;
     width: 100%;
     gap: ${theme.spacing.large};
-    padding-top: ${theme.spacing.large};
+    padding-top: ${theme.spacing.small};
 `;
 
 export const Wrapper = styled.div`
@@ -30,10 +30,12 @@ export const Title = styled.h1`
     font-family: ${theme.fonts.primary};
     font-weight: ${theme.fontWeights.bold};
     color: ${theme.colors.express};
+    margin-top: ${theme.spacing.medium};
 `;
 export const Subtitle = styled.h2`
   font-size: ${theme.fontSizes.medium};
   font-family: ${theme.fonts.secondary};
   font-weight: ${theme.fontWeights.regular};
   color: ${theme.colors.forgGray};
+  margin-top: ${theme.spacing.xsmall};
 `;
