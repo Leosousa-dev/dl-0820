@@ -8,9 +8,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: ${theme.spacing.large};
-    padding-top: ${theme.spacing.xsmall};
-    padding-bottom: ${theme.spacing.large};
+    padding-top: ${theme.spacing.small};
+    padding-bottom: ${theme.spacing.small};
 `;
 
 export const Wrapper = styled.div`

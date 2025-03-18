@@ -21,6 +21,12 @@ export const theme = {
         semibold: 600,
         bold: 700,
     },
+    borderRadius: {
+        small: "4px",
+        medium: "8px",
+        large: "12px",
+        full: "50px",
+      },
     spacing: {
         xsmall: "8px",
         small: "14px",

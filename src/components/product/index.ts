@@ -1,6 +1,18 @@
 import styled from "styled-components";
 import { theme } from "../../theme/ui";
 
+
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+`;
+
+
 export const Label = styled.label`
     display: flex;
     align-items: center;
@@ -11,6 +23,7 @@ export const Label = styled.label`
 `;
 
 export const List = styled.ul`
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
