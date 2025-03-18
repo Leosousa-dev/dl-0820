@@ -1,0 +1,16 @@
+{
+    "flavors": [
+        {
+            "id": 1,
+            "name": "Morango"
+        },  
+        {
+            "id": 2,
+            "name": "Maracujá"
+        },
+        {
+            "id": 3,
+            "name": "Brigadeiro"
+        }
+    ]
+}
