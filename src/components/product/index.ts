@@ -3,13 +3,23 @@ import { theme } from "../../theme/ui";
 
 
 
-export const Container = styled.div`
+
+export const Box = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
+    background-color: red;
+`;
+
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 `;
 
 
@@ -25,7 +35,5 @@ export const Label = styled.label`
 export const List = styled.ul`
     width: 100%;
     list-style: none;
-    padding: 0;
-    margin: 0;
     padding-bottom: ${theme.spacing.xlarge};
 `;

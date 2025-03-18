@@ -7,11 +7,11 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <div>
         <Analytics/>
         <Hero/>
         <Product/>
-    </>
+    </div>
   )
 }
 

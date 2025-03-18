@@ -1,10 +1,13 @@
 import { Checkbox } from "../ui/checkbox/checkbox";
 import { Label, List, Container } from "./index";
 import { Button } from "../ui/button/button";
-
+import sendMessage from "../../services/whatssapService";
 
 const sabores = ["Morango", "Maracujá", "Brigadeiro"];
 
+const handleSendMessage = async () => {
+    await sendMessage(sabores);
+}
 
 export const Product = () => {
 
@@ -20,7 +23,7 @@ export const Product = () => {
                     </li>
                 ))}
             </List>                
-            <Button>😋   Pedir agora !</Button>
+            <Button onClick={handleSendMessage}>😋   Pedir agora !</Button>
         </Container>
     )
 }
