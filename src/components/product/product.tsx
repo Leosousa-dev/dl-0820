@@ -1,24 +1,43 @@
 import { Checkbox } from "../ui/checkbox/checkbox";
 import { Label, List, Container } from "./index";
 import { Button } from "../ui/button/button";
-import sendMessage from "../../services/whatssapService";
+import db from "../../data/db.json";
+import { useState } from "react";
 
-const sabores = ["Morango", "Maracujá", "Brigadeiro"];
 
-const handleSendMessage = async () => {
-    await sendMessage(sabores);
-}
+
 
 export const Product = () => {
+    const [selectedFlavors, setSelectedFlavors] = useState<string[]>([]);
 
+
+    const handleCheck = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const {value, checked} = event.target;
+    
+        if(checked) {
+            setSelectedFlavors([...selectedFlavors, value]);
+        } else {
+            setSelectedFlavors(selectedFlavors.filter((flavor) => flavor !== value));
+        }
+    }
+    
+    
+    const handleSendMessage = () => {
+        console.log(selectedFlavors);
+    }
+    
     return (
         <Container>
             <List>
-                {sabores.map((sabor) => (
-                    <li key={sabor}>
+                {db.flavors.map((sabor) => (
+                    <li key={sabor.id}>
                         <Label>
-                            <Checkbox type="checkbox" value={sabor}/>
-                            {sabor}
+                            <Checkbox 
+                                type="checkbox" 
+                                value={sabor.name}
+                                onChange={handleCheck}
+                            />
+                            {sabor.name}
                         </Label>
                     </li>
                 ))}

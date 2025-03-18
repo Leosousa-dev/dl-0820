@@ -6,7 +6,7 @@ const phone = import.meta.env.VITE_WHATSAPP_NUMBER
 
 
 
-const sendMessage = () => {
+const sendMessage = (sabores: string[]) => {
     const favors = ['Morango', 'Maracujá', 'Brigadeiro']
     const message = `Olá, tudo bem? Gostaria de saber mais sobre os produtos. ${favors.join(', ')}`
 
