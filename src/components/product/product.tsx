@@ -2,6 +2,7 @@ import { Checkbox } from "../ui/checkbox/checkbox";
 import { Label, List, Container } from "./index";
 import { Button } from "../ui/button/button";
 import db from "../../data/db.json";
+import sendMessage from "../../services/whatssapService";
 import { useState } from "react";
 
 
@@ -23,7 +24,7 @@ export const Product = () => {
     
     
     const handleSendMessage = () => {
-        console.log(selectedFlavors);
+        sendMessage(selectedFlavors);
     }
     
     return (

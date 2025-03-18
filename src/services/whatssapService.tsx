@@ -1,17 +1,9 @@
 
 
-const phone = import.meta.env.VITE_WHATSAPP_NUMBER
+const sendMessage = (flavors: string[] ) => {
+    const message = `Olá, tudo bem? Gostaria de umas trufas de. ${flavors.join(', ')}`
 
-
-
-
-
-const sendMessage = (sabores: string[]) => {
-    const favors = ['Morango', 'Maracujá', 'Brigadeiro']
-    const message = `Olá, tudo bem? Gostaria de saber mais sobre os produtos. ${favors.join(', ')}`
-
-    const response = window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`
-    console.log(response)
+    const response = window.location.href = `https://api.whatsapp.com/send?phone=555198066299&text=${message}`
 }
 
 export default sendMessage
