@@ -20,6 +20,8 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    max-width: 600px;
+    padding-bottom: 24px;
 `;
 
 
